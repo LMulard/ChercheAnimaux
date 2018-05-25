@@ -1,0 +1,8 @@
+
+<ul *ngFor = "let a of animals">
+  <li>{{a.espece}}</li>
+  <li>{{a.famille}}</li>
+</ul>
+
+<input [(ngModel)]="animal.espece"> espece <br>
+<button (click)="addAnimal()">ajouter </button>
