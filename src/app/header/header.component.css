@@ -9,6 +9,7 @@ img{
     padding: 0px 0px 0px 35px;
 }
 #menu{
+  font-family: 'Lato', sans-serif;
     width : 100%;
 }
 #menu a {
@@ -43,7 +44,7 @@ img{
     padding: 8px 15px 9px 15px;
     display: block;
     text-decoration: none;
-    color: #ffffff;
+    color: #f1ede5;
     border: 1px solid transparent;
     font-size: 16px;
   }

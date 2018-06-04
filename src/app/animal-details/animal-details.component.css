@@ -1,0 +1,9 @@
+ul{
+    color: #564e40;
+    list-style: none;
+    border: 2px solid #4e493f;
+    display: block;
+    float: left;
+    border-radius: 5px;
+    padding: 20px;
+}

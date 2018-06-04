@@ -1,0 +1,29 @@
+ul{
+    list-style: none;
+    font-family: 'Lato', sans-serif;
+    color: #564e40;
+    float : left;
+}
+
+a{
+    text-decoration: none;
+    font-weight: bold;
+    font-style: italic;
+    color:#564e40;
+}
+
+a:hover {
+    color: #AAA69F;
+}
+
+button {
+   background: #564e40;
+   border-radius: 5px;
+   color: #f1ede5;
+}
+
+button:hover {
+    border-radius: 5px;
+    background: #AAA69F;
+    color: #49463f;
+}

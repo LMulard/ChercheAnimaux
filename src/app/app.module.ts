@@ -7,15 +7,35 @@ import { AnimalsService } from './_services/animals.service';
 import { ParcsService } from './_services/parcs.service';
 import { RegionsService } from './_services/regions.service';
 import { HeaderComponent } from './header/header.component';
+import { AnimalComponent } from './animal/animal.component';
+import {RouterModule, Routes} from '@angular/router';
+import { SearchAnimalComponent } from './search-animal/search-animal.component';
+import { ParcsComponent } from './parcs/parcs.component';
+import { ParcComponent } from './parc/parc.component';
+import { AnimalDetailsComponent } from './animal-details/animal-details.component';
+
+const appRoutes : Routes = [
+  {path:'', component: AnimalsComponent}, 
+  {path: 'animal/:id', component: AnimalComponent},
+  {path: 'parc/:id', component: ParcComponent},
+  {path: 'parcs', component: ParcsComponent},
+   {path: 'search', component: SearchAnimalComponent}
+];
 
 @NgModule({
   declarations: [
     AppComponent,
     AnimalsComponent,
-    HeaderComponent
+    HeaderComponent,
+    AnimalComponent,
+    SearchAnimalComponent,
+    ParcsComponent,
+    ParcComponent,
+    AnimalDetailsComponent,
+
   ],
   imports: [
-    BrowserModule, FormsModule
+    RouterModule.forRoot(appRoutes), BrowserModule, FormsModule
   ],
   providers: [AnimalsService, ParcsService, RegionsService],
   bootstrap: [AppComponent]

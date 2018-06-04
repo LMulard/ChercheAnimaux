@@ -1,0 +1,12 @@
+<h3> {{animal.espece|uppercase}}</h3>
+
+<nav>
+    <ul *ngFor="let p of parcs">
+        <li>
+            <a [routerLink]="['/parc', p.id]">{{p.nom}}</a>
+        </li>
+        <li>{{p.type}}</li>
+        <li>{{p.departement}}</li>
+        <img src="{{p.image}}">
+    </ul>
+</nav>

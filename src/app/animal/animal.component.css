@@ -1,0 +1,29 @@
+h3{
+    color : #d0610f;
+    font-family: 'Lato', sans-serif;
+    padding: 0 0 20px 120px;
+}
+
+nav{
+  
+    font-family: 'Lato', sans-serif;
+    color : #564e40;
+   
+}
+
+ul{
+    list-style: none;
+    float: left;
+}
+
+a{
+   
+    text-decoration: none;
+    color: #564e40;
+    font-weight: bold;
+    font-style: italic;
+}
+
+a:hover{
+    color: #AAA69F;
+}

@@ -1,0 +1,7 @@
+<div id="barreRecherche">
+<input type="text" [(ngModel)]="wordsToSearch" placeholder = "search" (keyup)="search()">
+<!--<div *ngFor = "let e of resultList">{{e.espece}}</div>-->
+<ul *ngFor = "let e of resultList">
+    <li><a [routerLink] = "['/animal', e.id]">{{e.espece}}</a></li>
+</ul>
+</div>
