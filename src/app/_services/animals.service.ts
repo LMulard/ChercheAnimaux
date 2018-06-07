@@ -28,4 +28,6 @@ export class AnimalsService {
   getAll(){
     return this.http.get<Animal[]>(this.url+"/all");
   }
+
+  
 }
