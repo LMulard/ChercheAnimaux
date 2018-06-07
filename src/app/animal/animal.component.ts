@@ -24,7 +24,7 @@ export class AnimalComponent implements OnInit {
 
   loadAnimal(id: string) {
     this.param = + id; //si la string id (p['id']) est un nombre, on le convertit en number
-    this.animal = this.animalsService.getAnimalById(this.param);
+    //this.animal = this.animalsService.getAnimalById(this.param);
     this.parcs = this.parcsService.getParcs().filter(p =>  p.animals.indexOf(this.param) != -1 );
   }
 

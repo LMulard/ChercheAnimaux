@@ -13,6 +13,9 @@ import { SearchAnimalComponent } from './search-animal/search-animal.component';
 import { ParcsComponent } from './parcs/parcs.component';
 import { ParcComponent } from './parc/parc.component';
 import { AnimalDetailsComponent } from './animal-details/animal-details.component';
+import { HttpClientModule } from '@angular/common/http';
+import { WebComponent } from './web/web.component';
+
 
 const appRoutes : Routes = [
   {path:'', component: AnimalsComponent}, 
@@ -32,10 +35,11 @@ const appRoutes : Routes = [
     ParcsComponent,
     ParcComponent,
     AnimalDetailsComponent,
+    WebComponent,
 
   ],
   imports: [
-    RouterModule.forRoot(appRoutes), BrowserModule, FormsModule
+    RouterModule.forRoot(appRoutes), BrowserModule, FormsModule, HttpClientModule
   ],
   providers: [AnimalsService, ParcsService, RegionsService],
   bootstrap: [AppComponent]

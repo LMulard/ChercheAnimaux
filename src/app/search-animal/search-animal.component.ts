@@ -14,7 +14,7 @@ export class SearchAnimalComponent implements OnInit {
   constructor(private animalsService : AnimalsService) { }
 
   ngOnInit() {
-    this.animals = this.animalsService.getAnimals();
+   // this.animals = this.animalsService.getAnimals();
   }
 
   search(){

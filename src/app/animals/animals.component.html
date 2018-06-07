@@ -3,17 +3,17 @@
 
 
 <div>
-
-<ul *ngFor = "let a of animals">
-  <li><a [routerLink] = "['/animal', a.id]">{{a.espece}}</a></li>
+<ul *ngFor = "let a of list">
+<li><a [routerLink] = "['/animal', a.id]">{{a.espece}}</a></li>
   <li>{{a.famille}}</li>
   <img src = "{{a.image}}">
   <button (click) = "select(a)">Details</button>
-  
 </ul>
+
 
 <p *ngIf = "animalSelected != null">
 <app-animal-details [animalDetails] = "animalSelected"></app-animal-details>
 </p>
+
 
 </div>

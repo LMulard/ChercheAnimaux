@@ -2,6 +2,7 @@
 
 <nav>
     <ul *ngFor="let p of parcs">
+        
         <li>
             <a [routerLink]="['/parc', p.id]">{{p.nom}}</a>
         </li>
