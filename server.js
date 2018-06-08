@@ -9,7 +9,7 @@ app.use(express.static('/dist/ChercheAnimaux'));
 //app.use(express.static('index.html'));
 app.get('/*', function (req, res) {
 
-    res.sendFile(__dirname+'/dist/ChercheAnimaux/index.html');
+    res.sendFile(__dirname + '/dist/ChercheAnimaux/index.html');
 });
 
-app.listen(process.env.PORT || 8080);
+app.listen(process.env.PORT || 8080); 
