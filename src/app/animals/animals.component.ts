@@ -10,8 +10,8 @@ import { AnimalsService } from '../_services/animals.service';
 })
 export class AnimalsComponent implements OnInit {
   animalSelected = null;
-  animals;
-  animal = new Animal();
+  //animals;
+  //animal = new Animal();
   list = [];
   resultat = null;
 
@@ -31,19 +31,17 @@ export class AnimalsComponent implements OnInit {
    getAnimalById(id: number): Animal {
      return this.animals.filter(a => a.id === id)[0];
    }
- 
+ */
    select(a: Animal) {
      if (this.animalSelected && this.animalSelected.id === a.id) {
        this.animalSelected = null;
      }else {
        this.animalSelected = a;
      }
-   }*/
+   }
 
   getAll() {
     this.animalsService.getAll().subscribe(r => this.list = r);
-
-
   }
 
 }

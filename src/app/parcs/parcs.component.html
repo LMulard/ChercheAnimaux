@@ -1,2 +1,11 @@
 <p>PARCS WORKS </p>
 <p>MAPS</p>
+
+<nav id="listParc">
+<ul *ngFor = 'let p of listParc'>
+    <li>{{p.nom}}</li>
+    <li>{{p.type}}</li>
+    <li>{{p.departement}}</li>
+    <img src = "{{p.image}}">
+</ul>
+</nav>

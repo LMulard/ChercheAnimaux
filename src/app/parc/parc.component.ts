@@ -19,6 +19,6 @@ export class ParcComponent implements OnInit {
 
   loadParcs(id:string){
     this.param = +id;
-    this.parc = this.parcsServices.getParcById(this.param);
+    //this.parc = this.parcsServices.getParcById(this.param);
   }
 }

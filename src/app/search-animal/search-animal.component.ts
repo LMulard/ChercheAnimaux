@@ -7,14 +7,19 @@ import { AnimalsService } from '../_services/animals.service';
   styleUrls: ['./search-animal.component.css']
 })
 export class SearchAnimalComponent implements OnInit {
+
   wordsToSearch : string;
   animals;
   resultList = [];
+  
+  
 
   constructor(private animalsService : AnimalsService) { }
 
   ngOnInit() {
    // this.animals = this.animalsService.getAnimals();
+   
+  
   }
 
   search(){
@@ -24,6 +29,10 @@ export class SearchAnimalComponent implements OnInit {
       this.resultList = this.animals.filter(e=>e.espece.toUpperCase().indexOf(this.wordsToSearch.toUpperCase()) !== -1);
     }
     
+  }
+
+  resultGetAll(){
+    this.animals = this.animalsService.getAll()
   }
 
 }

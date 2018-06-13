@@ -17,6 +17,15 @@ export class AnimalsService {
 
   constructor(private http:HttpClient) { }
 
+
+  getAll(){
+    return this.http.get<Animal[]>(this.url+"/all");
+  }
+
+  getAnimalById(id:number){
+    return this.http.get<Animal>(this.url + "/get/"+ id);
+  }
+  
  /* getAnimals(){
     return this.animals;
   }
@@ -24,10 +33,4 @@ export class AnimalsService {
   getAnimalById (id:number) : Animal {
     return this.animals.filter(a => a.id === id)[0];
   }*/
-
-  getAll(){
-    return this.http.get<Animal[]>(this.url+"/all");
-  }
-
-  
 }

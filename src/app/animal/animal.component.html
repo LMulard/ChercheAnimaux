@@ -1,8 +1,8 @@
-<h3> {{animal.espece|uppercase}}</h3>
+<h3> {{animal?.espece|uppercase}}</h3>
 
 <nav>
-    <ul *ngFor="let p of parcs">
-        
+    <ul *ngFor="let p of parc">
+        hello
         <li>
             <a [routerLink]="['/parc', p.id]">{{p.nom}}</a>
         </li>
